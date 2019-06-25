@@ -1,0 +1,47 @@
+@font-face{
+    font-family: "BlackLabel";
+    src: url('police/BlackLabel-Light.ttf') format("truetype");
+}
+
+#calcul{
+    display:flex;
+    font-family: "BlackLabel";
+    font-size: 30px;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+#calcul div,#calcul a{
+    display:flex;
+    justify-content: center;
+}
+
+#reponse{
+    display:flex;
+    font-family: "BlackLabel";
+    font-size: 30px;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+#reponse a{
+    margin-top: 50px;
+     display:flex;
+    justify-content: center;
+}
+
+input{
+    margin-top: 40px;
+    padding: 10px;
+}
+
+#resultat{
+    font-size:50px;
+}
+
+img{
+    width:50%;
+}
+

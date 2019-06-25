@@ -1,0 +1,144 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24 juin 2019, 11:30:51
+    Author     : Evann
+*/
+* {
+    font-family: 'Code'; /* Police par défaut */
+    box-sizing: border-box; /* Les tailles de conteneurs incluent bordures et 
+                               remplissages */
+    margin: 0; /* Mise à 0 des marges externes */
+    padding: 0; /* Mise à 0 des marges internes */
+    text-decoration: none; /* Suppression de la mise en forme habituelle des liens 
+                             (soulignement) */
+    background-color: #2b2626;
+    color:white;
+}
+
+@font-face{
+    font-family: "BlackLabel";
+    src: url('police/BlackLabel-Light.ttf') format("truetype");
+}
+
+@font-face{ 
+    font-family: "Code";
+    src: url('police/CODE Light.ttf') format("truetype");
+}
+
+body {
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    flex-direction: column; /* Les éléments sont empilés */
+    align-items: center; /* Les éléments portés sont centrés à la verticale */
+    width: 100%; /* La page occupe toute la largeur */
+}
+
+#banniere{
+    width:100%;
+    margin-bottom: 20px;
+}
+
+header {
+    font-family: "Code";
+    width: 100%; /* Les headers et sections occupent 916px (taille de la bannière) */
+    display: flex; /* Ce conteneur est "flexible" */
+    flex-direction: column; /* Les éléments sont empilés */
+    margin-top: 0px;
+}
+
+header nav{
+    display:flex;
+    justify-content: center;
+    width:100%
+        
+}
+
+nav input {
+    display: none;
+}
+
+nav ul {
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: space-between;
+    flex-direction: row; /* Les éléments sont mis côte à côte */
+    width: 90%
+}
+nav ul li {
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    list-style-type: none; /* Cette liste n'a pas de puce */
+    font-size: x-large; /* Le texte est grossi en XL */
+    flex-grow: 1; /* L'espace occupé est élargie */
+    
+}
+
+nav ul li a {
+    display: flex;
+    font-family: 'BlackLabel';
+    /*border-radius: 5px;*/
+    padding-top: 15px; /* Marge intérieure */
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right:30px;
+    color: white; /* Couleur du texte */
+    background-color: #585858; /* Couleur du fond */
+   /* box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                0 3px 5px rgba(0, 0, 0, .2),
+                0 5px 10px rgba(0, 0, 0, .2),
+                0 20px 20px rgba(0, 0, 0, .15);*/
+    
+}
+
+
+nav ul li a:hover
+{
+    background-color: #636063;
+    box-shadow: 0 0 2px white, 
+                0 -1px 0 rgba(0, 0, 0, .4);
+}
+
+#intro{
+    font-family: 'BlackLabel';
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+
+section {
+    padding-top: 80px;
+    width: 916px; /* Les sections occupent 916px (taille de la bannière) */
+}
+
+#video{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+section article p{
+    margin-top: 15px;
+    font-size: 25px;
+    line-height: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+footer {
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    align-items: center; /* Les éléments portés sont centrés à la verticale */
+    bottom: 0px; /* Bas */
+    height: 35px; /* Hauteur */
+    width: 100%; /* Le pied de page occupe toute la largeur */ 
+    background-color:#000000; /* Couleur de fond */
+    color: #F5F5DC; /* Couleur du texte */
+    text-align:center; /* Texte centré */
+    margin-top: 50px;
+}
+

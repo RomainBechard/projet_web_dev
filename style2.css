@@ -1,0 +1,55 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24 juin 2019, 11:30:51
+    Author     : Evann
+*/
+
+
+body {
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    flex-direction: column; /* Les éléments sont empilés */
+    align-items: center; /* Les éléments portés sont centrés à la verticale */
+    width: 100%; /* La page occupe toute la largeur */
+}
+
+
+nav input {
+    display: none;
+}
+
+
+section {
+    padding-top: 80px;
+    width: 1080px; /* Les sections occupent 1080px (taille de la bannière) */
+}
+
+section article p{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: #DAD0E3; /* Couleur du texte */
+    text-align: center; /* Le texte est centré */
+    font-size: xx-large; /* Le texte est grossi en XXL */
+}
+
+#thematique h1 {
+    width: 100%; /* Le titre occupe toute la largeur */ 
+    margin-bottom: 10px; /* Marge basse */
+}
+
+#thematique article {
+    flex: 1; /* flex-grow: 1 et flex-shrink:1 = Chaque élément occupe l'espace idéal (le + et le - à la fois) */
+    height: 256px; /* Hauteur */
+    border: transparent thin solid; /* Bordure transparente */
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+}
+

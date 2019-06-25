@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>KiloMoon: Calcul votre poids sur différentes lunes</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Evann DE BAILLIENCOURT/Timothé LANGERON/Romain BECHARD">
+         <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../favicon.ico">
+        <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/planete.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/dropdown.css" rel="stylesheet" type="text/css"/>
+        <script src="../js/calcul.js" type="text/javascript"></script>
+    </head>
+    <body>
+         <header>
+             <img id="banniere" src="../image/KILOMOON.png" alt=""/>
+            <nav>
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                 <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li class="dropdown"><a>Terre</a>
+                     <div class="dropdown-content">
+                              <a  href="../pages/terre.html">Link 1</a>                         
+                            </div></li>
+                    <li class="dropdown"><a >Mars</a>
+                     <div class="dropdown-content">
+                              <a href="../pages/mars.html">Link 1</a>
+
+                            </div></li>
+                    <li class="dropdown"><a>Jupiter</a>
+                     <div class="dropdown-content">
+                              <a  href="../pages/jupiter.html">Link 1</a>
+
+                            </div></li>
+                    <li class="dropdown"><a >Saturne</a>
+                     <div class="dropdown-content">
+                              <a href="../pages/saturne.html">Link 1</a>
+
+                            </div></li>
+                    <li class="dropdown"><a>Uranus</a>
+                     <div class="dropdown-content">
+                              <a href="../pages/uranus.html">Link 1</a>
+
+                            </div></li>
+                    <li class="dropdown"><a>Neptune</a>
+                     <div class="dropdown-content">
+                              <a href="../pages/neptune.html">Link 1</a>
+
+                            </div></li>
+                    <li><a href="../pages/nous-contacter.html">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="calcul">
+            <a>
+                Votre poids sur Terre :
+            </a>
+            <div>
+                <input type="text" name="i_nom" id="i_nom_saturne" size="60" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$" required>
+                <div class="input-validation"></div>
+            </div>
+        </section>
+        <aside>
+            <img src="../image/Saturne.png" alt=""/>
+        </aside>
+        <section id="reponse">
+            <a>
+                Votre poids sur la Lune est de (en kg):
+            </a>
+            <a id="resultat">
+                0.0
+            </a>
+        </section>
+        <footer>
+            <p>&copy;2019 KiloMoon - Créé par <a href="mailto:kilomoon@isen.yncrea.fr">Evann De Bailliencourt / Romain Bechard / Timothe Langeron</a><p> 
+        </footer>
+    </body>
+</html>
